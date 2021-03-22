@@ -1,0 +1,201 @@
+/* 
+
+Logo font: Contanter Bold
+
+Navigation Font: Lato - Regular/ Bold
+
+Font Sizes: h2: 65/ h4: 33 (light) / Button: 18/ 
+
+Gradient Color: #673ab7
+
+Service Active/ Hover Text Color: #654b9f
+
+Big Title h1: 127px Color: #e1e1e1
+Service h5: 20px text: 14px
+
+Customer H3: 50px - light/ Text - 18 / Button Color: #503392 / Background Color: #f7f7f7
+
+Portfolio: Button Color: #4e3391 / H3/ Text and Button Size - 18/ 
+
+Stats: h4 - 33/ 20 / Gradient Color: #4f3392 / 
+
+Contact BG Color# 232323 /  Button Color: #503392
+*/
+/* Global Styles */
+* {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+a {
+    color: #503392;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(76, 38, 143, 0.9), rgba(103, 58, 183, 0.7)),
+    url('../img/header-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 750px;
+    position: relative;
+}
+
+/* Navigation */
+
+nav ul li a {
+    display: inline-block;
+    color: #e1e1e1;
+}
+
+/* Headings */
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 0.9rem;
+}
+
+/* Buttons and Indicator Icons */
+.btn {
+    border-radius: 50px;
+    padding: 1% 5%;
+}
+
+.right-indicator {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+/* Service */
+
+#service h1 {
+    color: #e1e1e1;
+    padding-top: 20%;
+}
+
+.text-violet {
+    color: #503392;
+}
+
+#service .row {
+    padding: 5% 0;
+}
+
+/* Customer */
+
+#customer {
+    background-color: #f7f7f7;
+    background-image: url(../img/customer-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#customer .row {
+    padding: 25% 0;
+}
+
+.btn-secondary {
+    border-radius: 0px;
+    background-color: #503392;
+}
+
+/* Portfolio */
+#portfolio ul li a {
+    display: inline-block;
+    border: 2px solid #000;
+    margin: 5px;
+    padding: 5px 25px;
+}
+
+#portfolio ul li a:hover {
+    border-radius: 0px;
+    background-color: #503392;
+    color: #fff;
+    border: 2px solid #503392
+}
+
+/* Statics #4f3392 */
+#statistics {
+    background-image: linear-gradient(to bottom, rgba(76, 38, 143, 0.9), rgba(103, 58, 183, 0.7)),
+    url('../img/statistics-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 385px;
+}
+
+/* Contact */
+#contact {
+    background-color: #232323;
+}
+
+#contact form .form-control {
+    background-color: #232323;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+}
+
+/* Media Query */
+@media (max-width: 767.98px) {
+    #service img {
+        display: inline-block;
+        padding-bottom: 25px;
+    }
+
+    #customer {
+    background-image: linear-gradient(to bottom, rgba(76, 38, 143, 0.9), rgba(103, 58, 183, 0.7)),
+    url('../img/statistics-background.png');
+    background-size: cover;
+    text-align: center;
+    padding: 5%;
+    }
+
+    #customer p, .text-violet {
+        color: #fff;
+    }
+
+    #customer .btn-secondary {
+        background-color: #fff;
+        color: #000;
+    }
+
+    #portfolio img {
+        width: 75%;;
+    }
+    
+    #contact form {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
